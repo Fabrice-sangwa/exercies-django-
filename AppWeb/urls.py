@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from django.views.defaults import server_error
 
-from .views import index, bienvenue
+from .views import index, bienvenue, data
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('server/', server_error)
     path("index/", index),
-    path("bienvenue/", bienvenue)
+    path("bienvenue/", bienvenue),
+    path("data/", data)
 ]
