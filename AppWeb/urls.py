@@ -23,7 +23,7 @@ from .views import index, bienvenue, data
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('server/', server_error)
-    path("index/", index),
+    path("", index),
     path("bienvenue/", bienvenue),
     path("data/", data),
     path("blog/", include("blog.urls"))
