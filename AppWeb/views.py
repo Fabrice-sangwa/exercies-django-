@@ -10,8 +10,8 @@ def index(request):
 
 
 def bienvenue(request):
-    return render(request, "bienvenue.html")
+    return render(request, "AppWeb/bienvenue.html")
 
 
 def data(request):
-    return render(request, "data.html", context={"date": datetime.today(), "name" : "fabrice"})
+    return render(request, "AppWeb/data.html", context={"date": datetime.today(), "name" : "fabrice"})
